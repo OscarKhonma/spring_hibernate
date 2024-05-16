@@ -23,6 +23,7 @@ public class MainApp {
         Car car2 = new Car("Car2", 2);
         Car car3 = new Car("Car3", 3);
         Car car4 = new Car("Car4", 4);
+
         userService.addCar(car);
         userService.addCar(car2);
         userService.addCar(car3);
@@ -32,14 +33,15 @@ public class MainApp {
         user2.setCar(car2);
         user3.setCar(car3);
         user4.setCar(car4);
-
         userService.add(user);
         userService.add(user2);
         userService.add(user3);
         userService.add(user4);
 
 
+
         List<User> users = userService.listUsers();
+
         users.forEach(System.out::println);
         List<Car> cars = userService.listCars();
         cars.forEach(System.out::println);

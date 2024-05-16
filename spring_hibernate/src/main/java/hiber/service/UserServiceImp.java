@@ -39,7 +39,7 @@ public class UserServiceImp implements UserService {
 
     @Transactional
     public User getUserByCar(String model, int series) {
-        return userDao.getUserByCarId(model, series);
+        return userDao.getUserByCar(model, series);
     }
 
 }

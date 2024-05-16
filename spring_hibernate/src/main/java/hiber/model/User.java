@@ -18,7 +18,7 @@ public class User {
 
     private String email;
     @OneToOne
-    @JoinColumn(name = "cars_id")
+    @JoinColumn(name = "car_id")
     private Car car;
 
     public User() {
@@ -66,9 +66,8 @@ public class User {
         return car;
     }
 
-    public User setCar(Car car) {
+    public void setCar(Car car) {
         this.car = car;
-        return null;
     }
 
     @Override
